@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>wall</title>
+<!-- write your code here -->
+<style>
+  body {
+	overflow:hidden;
+  }
+  #animation_container {
+	position:absolute;
+	margin:auto;
+	left:-100%;right:-100%;
+	top:-100%;bottom:-100%;
+  }
+</style>
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+var rect; // used to reference frame bounds
+lib.ssMetadata = [];
+(lib.AnMovieClip = function(){
+	this.actionFrames = [];
+	this.gotoAndPlay = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndPlay.call(this,positionOrLabel);
+	}
+	this.play = function(){
+		cjs.MovieClip.prototype.play.call(this);
+	}
+	this.gotoAndStop = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndStop.call(this,positionOrLabel);
+	}
+	this.stop = function(){
+		cjs.MovieClip.prototype.stop.call(this);
+	}
+}).prototype = p = new cjs.MovieClip();
+// symbols:
+(lib.Bitmap10 = function() {
+	this.initialize(img.Bitmap10);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,187,132);
+(lib.Bitmap11 = function() {
+	this.initialize(img.Bitmap11);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,135,135);
+(lib.Bitmap12 = function() {
+	this.initialize(img.Bitmap12);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,161,219);
+(lib.Bitmap13 = function() {
+	this.initialize(img.Bitmap13);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,178,215);
+(lib.Bitmap3 = function() {
+	this.initialize(img.Bitmap3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,202,238);
+(lib.Bitmap7 = function() {
+	this.initialize(img.Bitmap7);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,202,238);
+(lib.Bitmap8 = function() {
+	this.initialize(img.Bitmap8);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,97,155);
+(lib.Bitmap9 = function() {
+	this.initialize(img.Bitmap9);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,97,155);
+(lib.black = function() {
+	this.initialize(img.black);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,5760,3240);
+(lib.cash0 = function() {
+	this.initialize(img.cash0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.eye0 = function() {
+	this.initialize(img.eye0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.graffiti0 = function() {
+	this.initialize(img.graffiti0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.ladder0 = function() {
+	this.initialize(img.ladder0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.poster0 = function() {
+	this.initialize(img.poster0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.sink0 = function() {
+	this.initialize(img.sink0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.spotlight0 = function() {
+	this.initialize(img.spotlight0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.star0 = function() {
+	this.initialize(img.star0);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
+(lib.walloverview = function() {
+	this.initialize(img.walloverview);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,5760,3240);// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.an_Video = function(options) {
+	this.initialize();
+	this._element = new $.an.Video(options);
+	this._el = this._element.create();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(0,0,400,300);
+p._tick = _tick;
+p._handleDrawEnd = _handleDrawEnd;
+p._updateVisibility = _updateVisibility;
+p.draw = _componentDraw;
+(lib.skipp = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#000000").s().p("AgRCAIA4iAIg5iAIAagLIA+CLIg+CMgAhFCAIA5iAIg5iAIAagLIA9CLIg9CMg");
+	this.shape.setTransform(51.75,29);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#000000").s().p("AgRCAIA4iAIg5iAIAagLIA+CLIg+CMgAhFCAIA5iAIg5iAIAagLIA9CLIg9CMg");
+	this.shape_1.setTransform(21.75,29);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("rgba(255,255,255,0.808)").s().p("AogETIAAolIRBAAIAAIlg");
+	this.shape_2.setTransform(54.5,27.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(0,0,109,55);
+p.frameBounds = [rect];
+(lib.play = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.467)").s().p("Ak1FJIgGgHIg8huIgCgHIgBgCIgCgIIgCgIIgEgQQgLguAAgzQAAipB4h4IABgBIACgCQAZgYAagTIAFgDQANgKAOgIIAHgEIAMgGIAPgHIBvggIACAAIADAAIADgBIACAAIANgBIAOgBIAVgBQCqAAB4B4IAEAFIBUB8IAIAUIAAgBIgagcQh4h4iqAAQhGAAg8AVQhYAchHBHQh4B3AACqQAABMAYBCIgGgHg");
+	this.shape.setTransform(0.825,-10.375);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AieiSIE9CSIk9CTg");
+	this.shape_1.setTransform(8.625,1.75);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#000000").s().p("AlEDmQgRgRgPgSIAGAHQgYhDAAhLQAAipB4h4QBHhHBYgcQA+gVBEAAQCqAAB4B4IAaAcQAYBCAABMQAACph4B4Qh4B4ipAAQiqAAh4h4gAh/CGIE9iSIk9iTg");
+	this.shape_2.setTransform(5.5,3.05);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-39,-43.9,82,82);
+p.frameBounds = [rect, rect, rect, rect];
+(lib.outbuton = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("Ag+hrIAZgIIAACXIABgBIBAhjIAcgJIgzBLIA6BJIgcAJIgrg7IgdArIAAAnIgZAJg");
+	this.shape.setTransform(95.825,59.45);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AgmBLQgVgPAAglQAAgkAWgdQAVgcAdgKQAYgHAVALIgOAVQgPgIgPAFQgTAGgOAUQgOAVAAAZQAAAbAOAMQAMALAVgGQASgGARgVIALAOQgVAagcAIQgMAFgLAAQgPAAgLgJg");
+	this.shape_1.setTransform(80.25,66.0103);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#FFFFFF").s().p("AgtBTQgNgIAAgUQAAgZAWgVQAWgTAwgVQAAgmgfAKQgVAHgYAXIgKgOQAfgeAcgJQA0gRAAA/IAABcIgVAHIgCgRIgBAAQgaAegXAHQgJAEgIAAQgIAAgGgEgAgSAQQgPAOAAAPQAAAYAagIQASgGAXgcIAAgpQgkAPgQAPg");
+	this.shape_2.setTransform(64.725,71.4092);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#FFFFFF").s().p("AhGhZIA8gTQBFgXAAAyQAAAQgHAPQgJAPgOAJIAAABQAUgCAKAIQAMAKAAATQAAAdgVAXQgVAWgiALIhBAVgAgJgBIgkALIAABNIAkgMQA3gSAAgoQAAgXgZAAQgNAAgRAFgAgNhXIggALIAABDIAfgKQAwgQAAgiQAAgRgMgFIgJgBQgLAAgPAFg");
+	this.shape_3.setTransform(48.825,74.7009);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#003399").s().p("AAAAAIgEgHIAJAPIgFgIg");
+	this.shape_4.setTransform(10.8,109.85);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#000000").s().p("AkVJdQh1gihkhKQgUgOgTgRQhsioAAjVQgBkoDSjTQDTjREoAAQEHAADEClQBsCoAADWQAAEojSDSQgqAqgtAhIgeAWQhXA6hjAcQhgAbhrAAQhrAAhggbg");
+	this.shape_5.setTransform(79.25,80.25);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("rgba(0,0,0,0.51)").s().p("AmdJyIgbgYIgIgIIgFgEIgCgCIgDgEIgDgCIgCgCQgxgzglg5IgLgQIgNgWQgphJgWhQIgBgDQgRg+gGhBQgCghgBgjIAAgEIAAgEIAAgEQABgxAHguIABgHIABgHQAUh7A8hpQAwhUBIhKQDTjREogBIAEAAIAFAAIALABIAEAAIAFAAIAIAAIAHAAIAEABIADAAIAFAAIAIABIAIAAIADABIAHAAIADABQAsAEArAKIACABQCbAlB+BqIAFADIADAEIApAlIADADIABACQAcAcAYAdQAbAhAWAiIAAAAQjEilkHAAQkoAAjSDRQjTDTABEoQAADVBsCoIAAABIgJgJg");
+	this.shape_6.setTransform(66.35,63.45);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(0,0,166.1,143.5);
+p.frameBounds = [rect];
+(lib.ladder = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.rf(["rgba(228,75,0,0.718)","rgba(186,53,39,0)","#FFFFFF","#FFFFFF","#FFFFFF"],[0,1,1,1,1],0,0,0,0,0,174.2).s().p("AgXazQklgojiq3Qjiq4CDpZQCDpaB+jqQB+jqEPj3QEPj3EGHSQEGHSjwRDQjxRDgeEGQgbDijgAAQgiAAgngGg");
+	this.shape.setTransform(68.6393,172.0717);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(0,0,137.3,344.2);
+p.frameBounds = [rect];
+(lib.star = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.Bitmap10();
+	this.instance.setTransform(-42,-16);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({_off:true},1).wait(1).to({_off:false},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = null;
+p.frameBounds = [rect, new cjs.Rectangle(-42,-16,187,132), null, new cjs.Rectangle(-42,-16,187,132)];
+(lib.spotlight = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.Bitmap3();
+	this.instance_1 = new lib.Bitmap7();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[]},1).to({state:[{t:this.instance_1}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = null;
+p.frameBounds = [rect, new cjs.Rectangle(0,0,202,238), null, new cjs.Rectangle(0,0,202,238)];
+(lib.sink = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.rf(["rgba(228,75,0,0.42)","rgba(186,53,39,0)","#FFFFFF","#FFFFFF","#FFFFFF"],[0,1,1,1,1],-35.5,-8.3,0,-35.5,-8.3,337.2).s().p("EghvAJWQpukLAKlQQAJlRKujrQKvjrPKAAQPKAAW+A7QW9A716GlQ16Gjk7EnQk8EnsbBAQicANiVAAQpmAAn0jXg");
+	this.shape.setTransform(277.2439,81.2853);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.rf(["rgba(228,75,0,0.42)","rgba(186,53,39,0)","#FFFFFF","#FFFFFF","#FFFFFF"],[0,1,1,1,1],0,0,0,0,0,288.4).s().p("EghvAJWQpukLAKlQQAJlRKujrQKvjrPKAAQPKAAW+A7QW9A716GlQ16Gjk7EnQk8EnsbBAQicANiVAAQpmAAn0jXg");
+	this.shape_1.setTransform(277.2439,81.2853);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[{t:this.shape}]},1).to({state:[{t:this.shape}]},1).to({state:[{t:this.shape_1}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(0,0,554.5,162.6);
+p.frameBounds = [rect, rect, rect, rect];
+(lib.poster = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.Bitmap11();
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({_off:true},1).wait(1).to({_off:false},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = null;
+p.frameBounds = [rect, new cjs.Rectangle(0,0,135,135), null, new cjs.Rectangle(0,0,135,135)];
+(lib.graffiti = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.Bitmap13();
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({_off:true},1).wait(1).to({_off:false},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = null;
+p.frameBounds = [rect, new cjs.Rectangle(0,0,178,215), null, new cjs.Rectangle(0,0,178,215)];
+(lib.eye = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.Bitmap12();
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({_off:true},1).wait(1).to({_off:false},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = null;
+p.frameBounds = [rect, new cjs.Rectangle(0,0,161,219), null, new cjs.Rectangle(0,0,161,219)];
+(lib.cash = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.Bitmap8();
+	this.instance_1 = new lib.Bitmap9();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[]},1).to({state:[{t:this.instance_1}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = null;
+p.frameBounds = [rect, new cjs.Rectangle(0,0,97,155), null, new cjs.Rectangle(0,0,97,155)];
+(lib.starout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {starout:0};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_175 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(6);
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(175).call(this.frame_175).wait(10));
+	// video
+	this.starout = new lib.an_Video({'id': 'starout', 'src':'videos/star%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.starout.name = "starout";
+	this.starout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.starout).wait(185));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(166).to({_off:false},0).wait(19));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1925,1083.7);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.spotlightout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {spotlightout:0};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this = this;
+		/*
+		Play a Movie Clip/Video or the current timeline.
+		Plays the specified movie clip or video.
+		*/
+		_this.play();
+	}
+	this.frame_175 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(6);
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(175).call(this.frame_175).wait(10));
+	// video
+	this.spotlightout = new lib.an_Video({'id': 'spotlightout', 'src':'videos/spotlight%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.spotlightout.name = "spotlightout";
+	this.spotlightout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.spotlightout).wait(185));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(166).to({_off:false},0).wait(19));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1925,1083.7);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.skip = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.skipp("synched",0);
+	this.instance.setTransform(75.6,-60.25,1,1,0,0,0,54.5,27.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({startPosition:0},0).wait(1).to({startPosition:0},0).wait(1).to({startPosition:0},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(21.1,-87.7,109,55);
+p.frameBounds = [rect, rect, rect, rect];
+(lib.sinkout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {sinkout:0};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_175 = function() {
+		this.parent.gotoAndPlay(5)
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(175).call(this.frame_175).wait(10));
+	// video
+	this.sinkout = new lib.an_Video({'id': 'sinkout', 'src':'videos/sink%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.sinkout.name = "sinkout";
+	this.sinkout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.sinkout).wait(185));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(166).to({_off:false},0).wait(19));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1925,1083.7);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.posterout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {posterout:0};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_175 = function() {
+		this.parent.gotoAndPlay(6)
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(175).call(this.frame_175).wait(10));
+	// video
+	this.posterout = new lib.an_Video({'id': 'posterout', 'src':'videos/poster%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.posterout.name = "posterout";
+	this.posterout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.posterout).wait(185));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(166).to({_off:false},0).wait(19));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1925,1083.7);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.overview = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// video
+	this.overview = new lib.an_Video({'id': 'overview', 'src':'videos/black%20wall%20new.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.overview.name = "overview";
+	this.overview.setTransform(960,540,4.8,3.6001,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.overview).wait(749));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.ladderout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {graffitiout:0};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_175 = function() {
+		this.parent.gotoAndPlay(6)
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(175).call(this.frame_175).wait(10));
+	// video
+	this.graffitiout = new lib.an_Video({'id': 'graffitiout', 'src':'videos/ladder%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.graffitiout.name = "graffitiout";
+	this.graffitiout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.graffitiout).wait(185));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(166).to({_off:false},0).wait(19));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1925,1083.7);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.graffitiout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {"graffitiout":0};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_175 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(6);
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(175).call(this.frame_175).wait(42));
+	// video
+	this.graffitiout = new lib.an_Video({'id': 'graffitiout', 'src':'videos/graffiti%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.graffitiout.name = "graffitiout";
+	this.graffitiout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.graffitiout).wait(217));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(166).to({_off:false},0).wait(51));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1925,1083.7);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.eyeout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {eyeout:0};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_158 = function() {
+		this.parent.gotoAndPlay(5)
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(158).call(this.frame_158).wait(34));
+	// video
+	this.eyeout = new lib.an_Video({'id': 'eyeout', 'src':'videos/eye%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.eyeout.name = "eyeout";
+	this.eyeout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.eyeout).wait(192));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(149).to({_off:false},0).to({_off:true},24).wait(19));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1925,1083.7);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.cashout = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {cashout:16};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_174 = function() {
+		this.parent.gotoAndPlay(3)
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(174).call(this.frame_174).wait(34));
+	// video
+	this.cashout = new lib.an_Video({'id': 'cashout', 'src':'videos/cash%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.cashout.name = "cashout";
+	this.cashout.setTransform(960.05,540.05,4.8004,3.6003,0,0,0,200,150);
+	this.cashout._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.cashout).wait(16).to({_off:false},0).wait(192));
+	// image
+	this.instance = new lib.cash0();
+	this.instance_1 = new lib.walloverview();
+	this.instance_1.setTransform(0,0,0.3333,0.3333);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[]},38).to({state:[{t:this.instance_1}]},129).wait(41));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(0,0,1920,1080);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(-2.4,-1.8,1925,1083.7), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.cashstill = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.cash = new lib.an_Video({'id': 'cash', 'src':'videos/cash.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.cash.name = "cash";
+	this.cash.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get(this.cash).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.cashstill, rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6), [rect]);
+(lib.out = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.outbuton("synched",0);
+	this.instance.setTransform(834.95,369.15,1,1,0,0,0,83,86);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({startPosition:0},0).wait(1).to({startPosition:0},0).wait(1).to({startPosition:0},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(752,283.2,166,143.5);
+p.frameBounds = [rect, rect, rect, rect];
+(lib.ladder_1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.ladder("synched",0);
+	this.instance.setTransform(68.7,172.1,1,1,0,0,0,68.7,172.1);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({_off:true},1).wait(1).to({_off:false},0).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = null;
+p.frameBounds = [rect, new cjs.Rectangle(0,0,137.3,344.2), null, new cjs.Rectangle(0,0,137.3,344.2)];
+(lib.starin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {starin:25,starstill:256};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this = this;
+		/*
+		Play a Movie Clip/Video or the current timeline.
+		Plays the specified movie clip or video.
+		*/
+		_this.play();
+	}
+	this.frame_268 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(290);
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(268).call(this.frame_268).wait(6));
+	// button
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-655.45,-186.2);
+	this.out._off = true;
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.out).wait(268).to({_off:false},0).wait(6));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.starin = new lib.an_Video({'id': 'starin', 'src':'videos/star%20in.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.starin.name = "starin";
+	this.starin.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.starstill = new lib.an_Video({'id': 'starstill', 'src':'videos/star%20still.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.starstill.name = "starstill";
+	this.starstill.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.starin}]},25).to({state:[{t:this.starstill}]},231).wait(18));
+	// image
+	this.instance = new lib.black();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance_1 = new lib.star0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},21).to({state:[]},19).to({state:[{t:this.instance_1}]},210).to({state:[]},18).wait(6));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.spotlightin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {fade:0,spotlightstill:3600,spotlightout2:3627,"spotlightstill":3879};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this = this;
+		/*
+		Play a Movie Clip/Video or the current timeline.
+		Plays the specified movie clip or video.
+		*/
+		_this.play();
+	}
+	this.frame_367 = function() {
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.skip2.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay(3699);
+		});
+	}
+	this.frame_3612 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(247);
+		});
+	}
+	this.frame_3885 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(247);
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(367).call(this.frame_367).wait(3245).call(this.frame_3612).wait(273).call(this.frame_3885).wait(3));
+	// button
+	this.skip2 = new lib.skip();
+	this.skip2.name = "skip2";
+	this.skip2.setTransform(1789.9,1039.05);
+	new cjs.ButtonHelper(this.skip2, 0, 1, 2, false, new lib.skip(), 3);
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-655.45,-186.2);
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.skip2}]},367).to({state:[]},1795).to({state:[{t:this.out}]},1450).to({state:[]},1).to({state:[{t:this.out}]},272).to({state:[]},1).wait(2));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.instance = new lib.an_Video({'id': '', 'src':'videos/spotlight%20inl.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.instance.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.spotlightstill = new lib.an_Video({'id': 'spotlightstill', 'src':'videos/spotlight%20still.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.spotlightstill.name = "spotlightstill";
+	this.spotlightstill.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.spotlightout2 = new lib.an_Video({'id': 'spotlightout2', 'src':'videos/spotlight%20out2.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.spotlightout2.name = "spotlightout2";
+	this.spotlightout2.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.instance}]},25).to({state:[{t:this.spotlightstill}]},3575).to({state:[{t:this.spotlightout2}]},27).to({state:[{t:this.spotlightstill}]},252).wait(9));
+	// image
+	this.instance_1 = new lib.black();
+	this.instance_1.setTransform(0,0,0.3333,0.3333);
+	this.instance_2 = new lib.spotlight0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},21).to({state:[]},19).to({state:[{t:this.instance_2}]},3554).to({state:[]},18).to({state:[{t:this.instance_2}]},265).to({state:[]},8).wait(3));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.sinkin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {sinkin:25,eyestill:4443,"eyestill":5032};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this = this;
+		/*
+		Play a Movie Clip/Video or the current timeline.
+		Plays the specified movie clip or video.
+		*/
+		_this.play();
+	}
+	this.frame_25 = function() {
+		playSound("sinksound");
+	}
+	this.frame_860 = function() {
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.skip.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay(4528);
+		});
+	}
+	this.frame_4450 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(66);
+		});
+	}
+	this.frame_5043 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(66);
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(25).call(this.frame_25).wait(835).call(this.frame_860).wait(3590).call(this.frame_4450).wait(593).call(this.frame_5043).wait(15));
+	// button
+	this.skip = new lib.skip();
+	this.skip.name = "skip";
+	this.skip.setTransform(1789.9,1065.05);
+	new cjs.ButtonHelper(this.skip, 0, 1, 2, false, new lib.skip(), 3);
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-655.45,-186.2);
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.skip}]},860).to({state:[]},3081).to({state:[{t:this.out}]},509).to({state:[]},3).to({state:[{t:this.out}]},590).wait(15));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.sinkin = new lib.an_Video({'id': 'sinkin', 'src':'videos/sink%20still%201.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.sinkin.name = "sinkin";
+	this.sinkin.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.eyestill = new lib.an_Video({'id': 'eyestill', 'src':'videos/eye%20still.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.eyestill.name = "eyestill";
+	this.eyestill.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.instance = new lib.an_Video({'id': '', 'src':'videos/sink%20out2.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.instance.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.sinkin}]},25).to({state:[{t:this.eyestill}]},4418).to({state:[{t:this.instance}]},10).to({state:[{t:this.eyestill}]},579).wait(26));
+	// image
+	this.instance_1 = new lib.black();
+	this.instance_1.setTransform(0,0,0.3333,0.3333);
+	this.instance_2 = new lib.eye0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},21).to({state:[]},19).to({state:[{t:this.instance_2,p:{x:0,y:0}}]},4399).to({state:[]},11).to({state:[{t:this.instance_2,p:{x:1,y:1}}]},572).to({state:[{t:this.instance_2,p:{x:0,y:0}}]},5).to({state:[]},16).to({state:[{t:this.instance_2,p:{x:1,y:1}}]},1).wait(14));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.posterin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {posterin:25,posterstill:1011};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_1023 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(165);
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(1023).call(this.frame_1023).wait(9));
+	// button
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-655.45,-186.2);
+	this.out._off = true;
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.out).wait(1023).to({_off:false},0).wait(9));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.posterin = new lib.an_Video({'id': 'posterin', 'src':'videos/poster%20still%202.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.posterin.name = "posterin";
+	this.posterin.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.posterstill = new lib.an_Video({'id': 'posterstill', 'src':'videos/poster%20still.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.posterstill.name = "posterstill";
+	this.posterstill.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.posterin}]},25).to({state:[{t:this.posterin}]},978).to({state:[{t:this.posterstill}]},8).wait(21));
+	// image
+	this.instance = new lib.black();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance_1 = new lib.poster0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},21).to({state:[]},19).to({state:[{t:this.instance_1}]},963).to({state:[]},20).wait(9));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.ladderin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_257 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(128);
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(257).call(this.frame_257).wait(11));
+	// button
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-655.45,-186.2);
+	this.out._off = true;
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.out).wait(257).to({_off:false},0).wait(11));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.graffitiin = new lib.an_Video({'id': 'graffitiin', 'src':'videos/ladder%20in.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.graffitiin.name = "graffitiin";
+	this.graffitiin.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.graffitistill = new lib.an_Video({'id': 'graffitistill', 'src':'videos/ladder%20still.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.graffitistill.name = "graffitistill";
+	this.graffitistill.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.graffitiin}]},25).to({state:[{t:this.graffitistill}]},220).wait(23));
+	// image
+	this.instance = new lib.black();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance_1 = new lib.ladder0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},21).to({state:[]},19).to({state:[{t:this.instance_1}]},199).to({state:[]},18).wait(11));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.graffitiin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {graffitistill:214};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_226 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(94);
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(226).call(this.frame_226).wait(2));
+	// button
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-655.45,-186.2);
+	this.out._off = true;
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.out).wait(226).to({_off:false},0).wait(2));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.graffitiinin = new lib.an_Video({'id': 'graffitiinin', 'src':'videos/graffiti%20in.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.graffitiinin.name = "graffitiinin";
+	this.graffitiinin.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.graffitistill = new lib.an_Video({'id': 'graffitistill', 'src':'videos/graffiti%20still.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.graffitistill.name = "graffitistill";
+	this.graffitistill.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.graffitiinin}]},25).to({state:[{t:this.graffitistill}]},189).wait(14));
+	// image
+	this.instance = new lib.black();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance_1 = new lib.graffiti0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},21).to({state:[]},19).to({state:[{t:this.instance_1}]},168).to({state:[]},18).wait(2));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.eyein = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_209 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(61);
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(209).call(this.frame_209).wait(1));
+	// button
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-655.45,-186.2);
+	this.out._off = true;
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.out).wait(209).to({_off:false},0).wait(1));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':true, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.eyein = new lib.an_Video({'id': 'eyein', 'src':'videos/eye%20in.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.eyein.name = "eyein";
+	this.eyein.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.eyestill = new lib.an_Video({'id': 'eyestill', 'src':'videos/eye%20still.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':true, 'poster':'', 'preload':true, 'class':'video'});
+	this.eyestill.name = "eyestill";
+	this.eyestill.setTransform(960,540,4.8,3.6,0,0,0,200,150);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.eyein}]},25).to({state:[{t:this.eyestill}]},172).wait(13));
+	// image
+	this.instance = new lib.black();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance_1 = new lib.eye0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},21).to({state:[]},19).to({state:[{t:this.instance_1}]},151).to({state:[]},18).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+(lib.cashin = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {cashstill:220};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this = this;
+		/*
+		Play a Movie Clip/Video or the current timeline.
+		Plays the specified movie clip or video.
+		*/
+		_this.play();
+	}
+	this.frame_233 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.out.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.parent.gotoAndPlay(27);
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.cashspotlightbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('cashspotlight');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.cashgraffiti.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay(239);
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.cashposter.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('cashposter');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.cashstar.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('cashstar');
+		});
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(233).call(this.frame_233).wait(10));
+	// button
+	this.out = new lib.out();
+	this.out.name = "out";
+	this.out.setTransform(-688.8,-175.8);
+	this.out._off = true;
+	new cjs.ButtonHelper(this.out, 0, 1, 2, false, new lib.out(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.out).wait(233).to({_off:false},0).to({_off:true},1).wait(9));
+	// video
+	this.wallfadeoutmov = new lib.an_Video({'id': 'wallfadeoutmov', 'src':'videos/wall%20fade%20out.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':false, 'class':'video'});
+	this.wallfadeoutmov.name = "wallfadeoutmov";
+	this.wallfadeoutmov.setTransform(960,540,4.7999,3.5999,0,0,0,200,150);
+	this.cashinin = new lib.an_Video({'id': 'cashinin', 'src':'videos/cash%20in.mp4', 'autoplay':true, 'controls':false, 'muted':false, 'loop':false, 'poster':'', 'preload':true, 'class':'video'});
+	this.cashinin.name = "cashinin";
+	this.cashinin.setTransform(960,540,4.8001,3.6,0,0,0,200,150);
+	this.cashstill = new lib.cashstill();
+	this.cashstill.name = "cashstill";
+	this.cashstill.setTransform(960,540,1,1,0,0,0,960,540);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.wallfadeoutmov}]}).to({state:[{t:this.cashinin}]},25).to({state:[{t:this.cashstill}]},195).wait(23));
+	// image
+	this.instance = new lib.black();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance_1 = new lib.cash0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},21).to({state:[]},19).to({state:[{t:this.instance_1}]},174).to({state:[]},19).to({state:[]},1).wait(9));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(-2.4,-1.8,1924.8,1083.6);
+p.frameBounds = [rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+// stage content:
+(lib.RECOVER_RECOVER_c2 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {stop:22,overview:0,overviewcash:7,cashin:15,"cashout":33,overvieweye:43,eyein:51,"eyeout":66,overviewgraffiti:71,graffitiin:79,"graffitiout":97,overviewladder:104,ladderin:113,ladderout:132,overviewposter:142,"posterin":151,"posterout":170,overviewsink:180,"sinkin":190,"sinkout":211,overviewspotlight:222,spotlightin:231,"spotlightout":252,overviewstar:263,"starin":272,"starout":294,overviewstill:0,"overview still":7,"cash still":24,"overview":43,"eye still":60,"overview":71,"graffiti still":88,"overview":104,ladderstill:122,"overview":142,"posterstill":161,"overview":180,sinkstill:203,"overview":222,"spotlightstill":243,"overview":263,"starstill":283};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	this.actionFrames = [0,6,22,23,42,58,59,70,86,87,103,120,121,141,159,160,179,200,201,221,241,242,262,281,282];
+	// timeline functions:
+	this.frame_0 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.playbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay(6);
+		});
+	}
+	this.frame_6 = function() {
+		canvas.style.zIndex = "1"
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.eyebutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('overvieweye');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.graffitibutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('overviewgraffiti');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.ladderbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('overviewladder');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.posterbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('overviewposter');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.sinkbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('overviewsink');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.spotlightbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('overviewspotlight');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.starbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay('overviewstar');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.cashbutton.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and continues playback from that frame.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndPlay(7);
+		});
+		playSound("theblackwall");
+	}
+	this.frame_22 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_23 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.cashin.gotoAndPlay('cashstill');
+	}
+	this.frame_42 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_58 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_59 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.eyein.gotoAndPlay('eyestill');
+	}
+	this.frame_70 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_86 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_87 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.graffitiin.gotoAndPlay('graffitistill');
+	}
+	this.frame_103 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_120 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_121 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.ladderin.gotoAndPlay('ladderstill');
+	}
+	this.frame_141 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_159 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_160 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.posterin.gotoAndPlay('posterstill');
+	}
+	this.frame_179 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_200 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_201 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.sinkin.gotoAndPlay('sinkstill');
+	}
+	this.frame_221 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_241 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_242 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.spotlightin.gotoAndPlay('spotlightstill');
+	}
+	this.frame_262 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_281 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		this.stop();
+	}
+	this.frame_282 = function() {
+		var _this = this;
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.starin.gotoAndPlay('starstill');
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(6).call(this.frame_6).wait(16).call(this.frame_22).wait(1).call(this.frame_23).wait(19).call(this.frame_42).wait(16).call(this.frame_58).wait(1).call(this.frame_59).wait(11).call(this.frame_70).wait(16).call(this.frame_86).wait(1).call(this.frame_87).wait(16).call(this.frame_103).wait(17).call(this.frame_120).wait(1).call(this.frame_121).wait(20).call(this.frame_141).wait(18).call(this.frame_159).wait(1).call(this.frame_160).wait(19).call(this.frame_179).wait(21).call(this.frame_200).wait(1).call(this.frame_201).wait(20).call(this.frame_221).wait(20).call(this.frame_241).wait(1).call(this.frame_242).wait(20).call(this.frame_262).wait(19).call(this.frame_281).wait(1).call(this.frame_282).wait(22));
+	// button
+	this.playbutton = new lib.play();
+	this.playbutton.name = "playbutton";
+	this.playbutton.setTransform(958.4,543.35);
+	new cjs.ButtonHelper(this.playbutton, 0, 1, 2, false, new lib.play(), 3);
+	this.graffitibutton = new lib.graffiti();
+	this.graffitibutton.name = "graffitibutton";
+	this.graffitibutton.setTransform(1488.1,588.85);
+	new cjs.ButtonHelper(this.graffitibutton, 0, 1, 2, false, new lib.graffiti(), 3);
+	this.cashbutton = new lib.cash();
+	this.cashbutton.name = "cashbutton";
+	this.cashbutton.setTransform(1522.4,440.85,1,1,0,0,0,48.4,77.4);
+	new cjs.ButtonHelper(this.cashbutton, 0, 1, 2, false, new lib.cash(), 3);
+	this.spotlightbutton = new lib.spotlight();
+	this.spotlightbutton.name = "spotlightbutton";
+	this.spotlightbutton.setTransform(1399.25,293.35,1,1,0,0,0,100.8,119);
+	new cjs.ButtonHelper(this.spotlightbutton, 0, 1, 2, false, new lib.spotlight(), 3);
+	this.posterbutton = new lib.poster();
+	this.posterbutton.name = "posterbutton";
+	this.posterbutton.setTransform(1259.5,764,1,1,0,0,0,67.4,67.3);
+	new cjs.ButtonHelper(this.posterbutton, 0, 1, 2, false, new lib.poster(), 3);
+	this.starbutton = new lib.star();
+	this.starbutton.name = "starbutton";
+	this.starbutton.setTransform(1071.55,424);
+	new cjs.ButtonHelper(this.starbutton, 0, 1, 2, false, new lib.star(), 3);
+	this.eyebutton = new lib.eye();
+	this.eyebutton.name = "eyebutton";
+	this.eyebutton.setTransform(1129.9,276.35,1,1,0,0,0,80.7,109.6);
+	new cjs.ButtonHelper(this.eyebutton, 0, 1, 2, false, new lib.eye(), 3);
+	this.ladderbutton = new lib.ladder_1();
+	this.ladderbutton.name = "ladderbutton";
+	this.ladderbutton.setTransform(885.7,578.4,1,1,0,0,0,68.7,172.1);
+	new cjs.ButtonHelper(this.ladderbutton, 0, 1, 2, false, new lib.ladder_1(), 3);
+	this.sinkbutton = new lib.sink();
+	this.sinkbutton.name = "sinkbutton";
+	this.sinkbutton.setTransform(361.75,774.85,1,1,0,0,0,277.2,81.2);
+	new cjs.ButtonHelper(this.sinkbutton, 0, 1, 2, false, new lib.sink(), 3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.playbutton}]}).to({state:[]},1).to({state:[{t:this.sinkbutton},{t:this.ladderbutton},{t:this.eyebutton},{t:this.starbutton},{t:this.posterbutton},{t:this.spotlightbutton},{t:this.cashbutton},{t:this.graffitibutton}]},5).to({state:[]},1).to({state:[]},64).wait(233));
+	// video
+	this.overview = new lib.overview();
+	this.overview.name = "overview";
+	this.overview.setTransform(960,540,1,1,0,0,0,960,540);
+	this.overview._off = true;
+	this.cashin = new lib.cashin();
+	this.cashin.name = "cashin";
+	this.cashin.setTransform(961,540,1,1,0,0,0,961,540);
+	this.cashout = new lib.cashout();
+	this.cashout.name = "cashout";
+	this.cashout.setTransform(960.1,540,1,1,0,0,0,960.1,540);
+	this.eyein = new lib.eyein();
+	this.eyein.name = "eyein";
+	this.eyein.setTransform(960,540,1,1,0,0,0,960,540);
+	this.eyeout = new lib.eyeout();
+	this.eyeout.name = "eyeout";
+	this.eyeout.setTransform(960,540,1,1,0,0,0,960,540);
+	this.graffitiin = new lib.graffitiin();
+	this.graffitiin.name = "graffitiin";
+	this.graffitiin.setTransform(960.05,540,1,1,0,0,0,960,540);
+	this.graffitiout = new lib.graffitiout();
+	this.graffitiout.name = "graffitiout";
+	this.graffitiout.setTransform(960.1,540,1,1,0,0,0,960.1,540);
+	this.ladderin = new lib.ladderin();
+	this.ladderin.name = "ladderin";
+	this.ladderin.setTransform(960.05,540,1,1,0,0,0,960,540);
+	this.ladderout = new lib.ladderout();
+	this.ladderout.name = "ladderout";
+	this.ladderout.setTransform(960.05,539.95,0.9999,0.9999,0,0,0,960.1,540);
+	this.posterin = new lib.posterin();
+	this.posterin.name = "posterin";
+	this.posterin.setTransform(959.95,540.05,1,1,0,0,0,960,540);
+	this.posterout = new lib.posterout();
+	this.posterout.name = "posterout";
+	this.posterout.setTransform(960.05,539.95,0.9999,0.9999,0,0,0,960.1,540);
+	this.sinkin = new lib.sinkin();
+	this.sinkin.name = "sinkin";
+	this.sinkin.setTransform(960,540,1,1,0,0,0,960,540);
+	this.sinkout = new lib.sinkout();
+	this.sinkout.name = "sinkout";
+	this.sinkout.setTransform(960.05,539.95,0.9999,0.9999,0,0,0,960.1,540);
+	this.spotlightin = new lib.spotlightin();
+	this.spotlightin.name = "spotlightin";
+	this.spotlightin.setTransform(960,540,1,1,0,0,0,960,540);
+	this.spotlightout = new lib.spotlightout();
+	this.spotlightout.name = "spotlightout";
+	this.spotlightout.setTransform(960.05,539.95,0.9999,0.9999,0,0,0,960.1,540);
+	this.overviewstar = new lib.overview();
+	this.overviewstar.name = "overviewstar";
+	this.overviewstar.setTransform(960,540,1,1,0,0,0,960,540);
+	this.starin = new lib.starin();
+	this.starin.name = "starin";
+	this.starin.setTransform(960.05,540,1,1,0,0,0,960,540);
+	this.starout = new lib.starout();
+	this.starout.name = "starout";
+	this.starout.setTransform(960.05,539.95,0.9999,0.9999,0,0,0,960.1,540);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.overview}]},1).to({state:[{t:this.overview}]},5).to({state:[{t:this.overview}]},1).to({state:[{t:this.cashin}]},8).to({state:[{t:this.cashout}]},18).to({state:[{t:this.overview}]},10).to({state:[{t:this.eyein}]},8).to({state:[{t:this.eyeout}]},15).to({state:[{t:this.overview}]},5).to({state:[{t:this.graffitiin}]},8).to({state:[{t:this.graffitiout}]},18).to({state:[{t:this.overview}]},7).to({state:[{t:this.ladderin}]},9).to({state:[{t:this.ladderout}]},19).to({state:[{t:this.overview}]},10).to({state:[{t:this.posterin}]},9).to({state:[{t:this.posterout}]},19).to({state:[{t:this.overview}]},10).to({state:[{t:this.sinkin}]},10).to({state:[{t:this.sinkout}]},21).to({state:[{t:this.overview}]},11).to({state:[{t:this.spotlightin}]},9).to({state:[{t:this.spotlightout}]},21).to({state:[{t:this.overviewstar}]},11).to({state:[{t:this.starin}]},9).to({state:[{t:this.starout}]},22).wait(10));
+	this.timeline.addTween(cjs.Tween.get(this.overview).wait(1).to({_off:false},0).wait(6).to({_off:true},8).wait(28).to({_off:false,x:959.9},0).to({_off:true},8).wait(20).to({_off:false,x:960},0).to({_off:true},8).wait(25).to({_off:false},0).to({_off:true},9).wait(29).to({_off:false},0).to({_off:true},9).wait(29).to({_off:false},0).to({_off:true},10).wait(32).to({_off:false},0).to({_off:true},9).wait(73));
+	// image
+	this.instance = new lib.walloverview();
+	this.instance.setTransform(0,0,0.3333,0.3333);
+	this.instance_1 = new lib.cash0();
+	this.instance_2 = new lib.eye0();
+	this.instance_3 = new lib.graffiti0();
+	this.instance_4 = new lib.ladder0();
+	this.instance_5 = new lib.poster0();
+	this.instance_6 = new lib.sink0();
+	this.instance_7 = new lib.spotlight0();
+	this.instance_8 = new lib.star0();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[]},6).to({state:[{t:this.instance}]},1).to({state:[]},15).to({state:[{t:this.instance_1}]},2).to({state:[]},16).to({state:[{t:this.instance}]},3).to({state:[]},15).to({state:[{t:this.instance_2}]},2).to({state:[]},10).to({state:[{t:this.instance}]},1).to({state:[]},15).to({state:[{t:this.instance},{t:this.instance_3}]},2).to({state:[]},15).to({state:[{t:this.instance}]},1).to({state:[]},16).to({state:[{t:this.instance_4}]},2).to({state:[]},19).to({state:[{t:this.instance}]},1).to({state:[]},17).to({state:[{t:this.instance_5}]},2).to({state:[]},18).to({state:[{t:this.instance}]},1).to({state:[]},20).to({state:[{t:this.instance_6}]},3).to({state:[]},18).to({state:[{t:this.instance}]},1).to({state:[]},19).to({state:[{t:this.instance_7}]},2).to({state:[]},19).to({state:[{t:this.instance}]},1).to({state:[]},18).to({state:[{t:this.instance_8}]},2).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},6).wait(1).to({_off:false},0).to({_off:true},15).wait(21).to({_off:false},0).to({_off:true},15).wait(13).to({_off:false},0).to({_off:true},15).wait(2).to({_off:false},0).to({_off:true},15).wait(1).to({_off:false},0).to({_off:true},16).wait(22).to({_off:false},0).to({_off:true},17).wait(21).to({_off:false},0).to({_off:true},20).wait(22).to({_off:false},0).to({_off:true},19).wait(22).to({_off:false},0).to({_off:true},18).wait(23));
+	this._renderFirstFrame();
+}).prototype = p = new lib.AnMovieClip();
+p.nominalBounds = rect = new cjs.Rectangle(960,540,1919.9,1080);
+p.frameBounds = [rect, rect=new cjs.Rectangle(957.6,538.2,1924.8,1083.6), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(960,540,1920,1080), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(957.5,538.2,1924.8,1083.6), rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(957.6,538.2,1924.8,1083.6), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(957.6,538.2,1925,1083.7), rect, rect, rect, rect, rect=new cjs.Rectangle(957.6,538.2,1924.8,1083.6), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(957.6,538.2,1925,1083.7), rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(957.6,538.2,1924.8,1083.6), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(957.6,538.3,1924.8,1083.6), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect=new cjs.Rectangle(957.6,538.2,1924.8,1083.6), rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect, rect];
+// library properties:
+lib.properties = {
+	id: '0E2535D022614A4895F447ED776C73B2',
+	width: 1920,
+	height: 1080,
+	fps: 25,
+	color: "#000000",
+	opacity: 0.00,
+	manifest: [
+		{src:"images/Bitmap10.png", id:"Bitmap10"},
+		{src:"images/Bitmap11.png", id:"Bitmap11"},
+		{src:"images/Bitmap12.png", id:"Bitmap12"},
+		{src:"images/Bitmap13.png", id:"Bitmap13"},
+		{src:"images/Bitmap3.png", id:"Bitmap3"},
+		{src:"images/Bitmap7.png", id:"Bitmap7"},
+		{src:"images/Bitmap8.png", id:"Bitmap8"},
+		{src:"images/Bitmap9.png", id:"Bitmap9"},
+		{src:"images/black.jpg", id:"black"},
+		{src:"images/cash0.jpg", id:"cash0"},
+		{src:"images/eye0.jpg", id:"eye0"},
+		{src:"images/graffiti0.jpg", id:"graffiti0"},
+		{src:"images/ladder0.jpg", id:"ladder0"},
+		{src:"images/poster0.jpg", id:"poster0"},
+		{src:"images/sink0.jpg", id:"sink0"},
+		{src:"images/spotlight0.jpg", id:"spotlight0"},
+		{src:"images/star0.jpg", id:"star0"},
+		{src:"images/walloverview.png", id:"walloverview"},
+		{src:"sounds/page.mp3", id:"page"},
+		{src:"sounds/haptic.mp3", id:"haptic"},
+		{src:"sounds/sinksound.mp3", id:"sinksound"},
+		{src:"sounds/theblackwall.mp3", id:"theblackwall"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js", id:"sdk/anwidget.js"},
+		{src:"components/video/src/video.js", id:"an.Video"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['0E2535D022614A4895F447ED776C73B2'] = {
+	getStage: function() { return exportRoot.stage; },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	var lastW, lastH, lastS=1;		
+	window.addEventListener('resize', resizeCanvas);		
+	resizeCanvas();		
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+		if(isResp) {                
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+				sRatio = lastS;                
+			}				
+			else if(!isScale) {					
+				if(iw<w || ih<h)						
+					sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==1) {					
+				sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==2) {					
+				sRatio = Math.max(xRatio, yRatio);				
+			}			
+		}
+		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].height = h * pRatio * sRatio;
+		domContainers.forEach(function(container) {				
+			container.style.width = w * sRatio + 'px';				
+			container.style.height = h * sRatio + 'px';			
+		});
+		stage.scaleX = pRatio*sRatio;			
+		stage.scaleY = pRatio*sRatio;
+		lastW = iw; lastH = ih; lastS = sRatio;            
+		stage.tickOnUpdate = false;            
+		stage.update();            
+		stage.tickOnUpdate = true;		
+	}
+}
+function _updateVisibility(evt) {
+	var parent = this.parent;
+	var detach = this.stage == null || this._off || !parent;
+	while(parent) {
+		if(parent.visible) {
+			parent = parent.parent;
+		}
+		else{
+			detach = true;
+			break;
+		}
+	}
+	detach = detach && this._element && this._element._attached;
+	if(detach) {
+		this._element.detach();
+		this.dispatchEvent('detached');
+		stage.removeEventListener('drawstart', this._updateVisibilityCbk);
+		this._updateVisibilityCbk = false;
+	}
+}
+function _handleDrawEnd(evt) {
+	if(this._element && this._element._attached) {
+		var props = this.getConcatenatedDisplayProps(this._props), mat = props.matrix;
+		var tx1 = mat.decompose(); var sx = tx1.scaleX; var sy = tx1.scaleY;
+		var dp = window.devicePixelRatio || 1; var w = this.nominalBounds.width * sx; var h = this.nominalBounds.height * sy;
+		mat.tx/=dp;mat.ty/=dp; mat.a/=(dp*sx);mat.b/=(dp*sx);mat.c/=(dp*sy);mat.d/=(dp*sy);
+		this._element.setProperty('transform-origin', this.regX + 'px ' + this.regY + 'px');
+		var x = (mat.tx + this.regX*mat.a + this.regY*mat.c - this.regX);
+		var y = (mat.ty + this.regX*mat.b + this.regY*mat.d - this.regY);
+		var tx = 'matrix(' + mat.a + ',' + mat.b + ',' + mat.c + ',' + mat.d + ',' + x + ',' + y + ')';
+		this._element.setProperty('transform', tx);
+		this._element.setProperty('width', w);
+		this._element.setProperty('height', h);
+		this._element.update();
+	}
+}
+function _tick(evt) {
+	var stage = this.stage;
+	stage&&stage.on('drawend', this._handleDrawEnd, this, true);
+	if(!this._updateVisibilityCbk) {
+		this._updateVisibilityCbk = stage.on('drawstart', this._updateVisibility, this, false);
+	}
+}
+function _componentDraw(ctx) {
+	if(this._element && !this._element._attached) {
+		this._element.attach($('#dom_overlay_container'));
+		this.dispatchEvent('attached');
+	}
+}
+an.handleSoundStreamOnTick = function(event) {
+	if(!event.paused){
+		var stageChild = stage.getChildAt(0);
+		if(!stageChild.paused){
+			stageChild.syncStreamSounds();
+		}
+	}
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("0E2535D022614A4895F447ED776C73B2");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.installPlugin(createjs.Sound);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.RECOVER_RECOVER_c2();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(true,'both',true,2,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+function playSound(id, loop, offset) {
+	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(0, 0, 0, 0.00); width:1920px; height:1080px">
+		<canvas id="canvas" width="1920" height="1080" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1080px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>
